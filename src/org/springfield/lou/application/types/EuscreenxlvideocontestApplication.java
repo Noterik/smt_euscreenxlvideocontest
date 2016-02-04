@@ -13,7 +13,7 @@ public class EuscreenxlvideocontestApplication extends Html5Application{
 		
  	public EuscreenxlvideocontestApplication(String id) {
 		super(id); 
-		
+		System.out.println("WHooo i am awake");
 		this.addReferid("mobilenav", "/euscreenxlelements/mobilenav");
 		this.addReferid("header", "/euscreenxlelements/header");
 		this.addReferid("footer", "/euscreenxlelements/footer");
