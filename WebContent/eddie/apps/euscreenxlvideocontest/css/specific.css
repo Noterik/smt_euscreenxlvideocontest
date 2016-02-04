@@ -57,6 +57,7 @@
 .contest-page-share-ul {
 	float: right;
 	margin-bottom: 0px;
+	padding-left: 0px;
 	margin-top: 7px;
 	display: inline-flex;
 	list-style: outside none none;
@@ -78,7 +79,6 @@
 }
 .videocontest .contest-page-share {
 	height: 52px;
-	background-color: rgb(255, 255, 255);
 	padding: 5px 0px;
 }
 .videocontest .main {
