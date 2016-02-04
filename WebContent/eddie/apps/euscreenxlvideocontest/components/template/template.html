@@ -15,13 +15,15 @@
 
     <!-- bar with share buttons -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row row-with-bg">
+            <div class="col-md-12 col-md-pull-1">
                 <div class="contest-page-share">
-                    <div class=""><i class="fa fa-facebook fa-lg"></i></div>
-                    <div class=""><i class="fa fa-twitter fa-lg"></i></div>
-                    <div class=""><i class="fa fa-google-plus fa-lg"></i></div>
-                    <div class=""></div>
+                	<ul class="contest-page-share-ul">
+					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-facebook fa-lg fa-modified"></i></a></li>
+					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-twitter fa-lg fa-modified"></i></a></li>
+					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-google-plus fa-lg fa-modified"></i></a></li>
+					  <li><div class="share-copy-box"></div></li>
+					</ul> 
                 </div>
             </div>
         </div>
@@ -38,36 +40,18 @@
     			</p>
     		</div>
 
-            <div class="col-md-5 col-md-pull-1">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" name="Url" placeholder="Url of your favourite Euscreen video">
-                <input type="text" name="sumary" placeholder="Tell us why do you like this video">
-
-                <!-- captcha -->
-                <form method="POST" name="contact_form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>"> 
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" value="<?php echo htmlentities($name) ?>">
-                     
-                    <label for="email">Email: </label>
-                    <input type="text" name="email" value="<?php echo htmlentities($visitor_email) ?>">
-                     
-                    <label for="message">Message:</label> 
-                    <textarea name="message" rows=8 cols=30><?php echo htmlentities($user_message) ?></textarea>
-                     
-                    <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id="captchaimg" >
-                    <label for="message">Enter the code above here :</label>
-                    <input id="6_letters_code" name="6_letters_code" type="text">
-                     
-                    <input type="submit" value="Submit" name="submit">
-                </form>
-
-                <div class="btn btn-primary btn-lg">SUBMIT</div>
+            <div class="col-md-5 col-md-push-1">
+                <input type="text" class="contest-page-input" name="name" placeholder="Name">
+                <input type="text" class="contest-page-input" name="email" placeholder="Email">
+                <input type="text" class="contest-page-input" name="Url" placeholder="Url of your favourite Euscreen video">
+                <textarea type="text" class="contest-page-textarea" name="sumary" placeholder="Tell us why do you like this video"></textarea>
+				<div class="captcha-holder"></div>
+                <div class="btn btn-primary btn-lg btn-modified">SUBMIT</div>
             </div>
 
     	</div>
 
-        <div class="videocontest-content row  welcome-text">
+        <div class="row welcome-text-modified">
             <p>
                 Disclaimer that the collected personal info will not be shared further etc. legal notes, also geographical restrictions in case we have some (i'm thinking if there are some deu to being an EU project or due to postal costs for sending a prize).
             </p>
