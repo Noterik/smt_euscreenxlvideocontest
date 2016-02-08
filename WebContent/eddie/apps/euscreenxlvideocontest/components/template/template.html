@@ -9,7 +9,7 @@
     <!-- jumbotron -->
     <div class="jumbotron-wide" id="intro">
         <span class="wrap">
-        	<h1>VIDEO CONTEST</h1>
+        	<h1>Video Contest | My favourite EUscreen video</h1>
         </span>
     </div>
 
@@ -18,12 +18,32 @@
         <div class="row row-with-bg">
             <div class="col-md-12 col-md-pull-1">
                 <div class="contest-page-share">
-                	<ul class="contest-page-share-ul">
-					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-facebook fa-lg fa-modified"></i></a></li>
-					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-twitter fa-lg fa-modified"></i></a></li>
-					  <li><a href="#" class="contest-page-share-a"><i class="fa fa-google-plus fa-lg fa-modified"></i></a></li>
-					  <li><div class="share-copy-box"></div></li>
-					</ul> 
+					<ul class="contest-page-share-ul">    
+				        <li><a href="#" title="Share to Facebook" id="button-facebook">
+				            <span class="glyphicon glyphicon-stack glyphicon-lg fa fa-stack fa-lg">
+				                <i class="glyphicon glypicon-circle glyphicon-stack-2x fa fa-circle fa-stack-2x"></i>
+				                <i class="glyphicon glyphicon-facebook glyphicon-stack1x glypicon-inverse fa fa-facebook fa-stack-1x fa-inverse"></i>
+				            </span>
+				        </a></li>
+				        <li><a href="#" title="Share to Twitter" id="button-twitter">
+				            <span class="glyphicon glyphicon-stack glyphicon-lg fa fa-stack fa-lg">
+				                <i class="glyphicon glypicon-circle glyphicon-stack-2x fa fa-circle fa-stack-2x"></i>
+				                <i class="glyphicon glyphicon-twitter glyphicon-stack-1x glyphicon-inverse fa fa-twitter fa-stack-1x fa-inverse"></i>
+				            </span>
+				        </a></li>
+				        <li><a href="#" title="Share to Google +" id="button-google">
+				            <span class="glyphicon glyphicon-stack glyphicon-lg fa fa-stack fa-lg">
+				                <i class="glyphicon glypicon-circle glyphicon-stack-2x fa fa-circle fa-stack-2x"></i>
+				                <i class="glyphicon glyphicon-google-plus glyphicon-stack-1x glypicon-inverse fa fa-google-plus fa-stack-1x fa-inverse"></i>
+				            </span>
+				        </a></li>
+				        <li><div class="share-copy-box"></div></li>
+				       <!--<li><div class="permalink input-group">
+					        <span class="input-group-addon"><i class="glyphicon glyphicon-link fa fa-link"></i></span>
+					        <input class="form-control" readonly="" value="http://loremipsum.com/v/12412" type="text">
+					    </div></li>-->
+				    </ul>
+					
                 </div>
             </div>
         </div>
@@ -36,19 +56,40 @@
     	<div class="videocontest-content row  welcome-text">
     		<div class="col-md-5 col-md-push-1">
     			<p>
-    				Lorem daniel rules ipsum dolor sit amet, feugiat habitasse vivamus in feugiat eros ante, augue elit non, diam nec sit aperiam duis wisi, at augue. Posuere vulputate felis vestibulum, pharetra lacus sed sodales malesuada iaculis, pede purus vitae dolor. Maecenas dui est quam, felis leo nec in pellentesque, venenatis odio vel orci vel semper nec, nam ridiculus eros. Arcu parturient, vitae magna amet suspendisse nam nec, tempus ac diam eget porta in, vestibulum nam cras mattis euismod sed. Consequat nunc. Sed risus molestie neque nisl et justo, nullam quam in tristique dictum, a vitae mattis faucibus convallis. At nisl pretium tortor egestas, etiam condimentum in nibh. Aenean diam tortor odio, vivamus non at velit. Id phasellus ligula fusce pede vulputate id, porta mollis aliquam ac, nonummy vel molestie urna aenean consequat et. Eget sit nonummy fringilla aenean, nec sed erat phasellus amet nisl, est ipsum neque egestas quam nunc, sed vehicula. Nunc purus, hendrerit nunc imperdiet.
+					Here at EUscreen our editorial team is constantly
+					creating new and interesting collections to highlight our
+					rich European heritage. Today we have more than 60,000
+					videos on our portal to pick from, representing 22 European
+					broadcasters and archives.
+					</br></br>
+					Now we want to know which ones you like the best!
+					And we're rewarding 12 winners with a 30€ Amazon gift-card each.
+					</br></br>
+					Send us your favourite EUscreen video before February 24 @ 12:00 CET
+					by filling in the form to the right.
+					</br></br>
+					Our next Video Collection will showcase 12 EUscreen videos
+					chosen by you, the EUscreen community. This won't be a
+					"best of EUscreen" contest, and there's no guarantee that
+					the most popular videos will win.
+					</br></br>
+					We want you to tell us why your chosen video is
+					your favourite. Be original and be adventurous!
+					</br></br>
+					Our jury will review your suggestions and announce the winners
+					on February 25. Good luck!! 
     			</p>
     		</div>
 
             <div class="col-md-5 col-md-push-1">
 	            <form action="" method="post">
-	                <input type="text" class="contest-page-input" name="name" required placeholder="Name and Surname">
-	                <input type="text" class="contest-page-input" name="email" required placeholder="Email">
-	                <input type="text" class="contest-page-input" name="Url" required placeholder="Url of your favourite Euscreen video">
-	                <textarea type="text" class="contest-page-textarea" name="sumary" required placeholder="Tell us why do you like this video"></textarea>
+	                <input id="input-1" type="text" class="contest-page-input" name="name" required placeholder="Name and Surname">
+	                <input id="input-2" type="text" class="contest-page-input" name="email" required placeholder="Email">
+	                <input id="input-3" type="text" class="contest-page-input" name="Url" required placeholder="Url of your favourite Euscreen video">
+	                <textarea id="txt-area" type="text" class="contest-page-textarea" name="sumary" required placeholder="Tell us why do you like this video (minimum 20 words in English)"></textarea>
 					<!--<div class="captcha-holder"></div>
 					<input type="text" class="contest-page-input" name="email" required placeholder="Enter captcha">-->
-	                <div class="btn btn-primary btn-lg btn-modified">SUBMIT</div>
+	                <div id="submit-btn" class="btn btn-primary btn-lg btn-modified">SUBMIT</div>
 	            </form>
             </div>
 
@@ -56,7 +97,7 @@
 
         <div class="row welcome-text-modified">
             <p>
-                EUscreen.eu will not pass on your details to any third party without your prior consent. Only one (1) entry per entrant is permitted – multiple entries will be disqualified. Please see our <a href="http://www.noterik.nl/wp-content/uploads/2016/02/euscreen_contest_terms.html.pdf" target="_blank">Terms and Conditions</a> for more information.
+                EUscreen.eu will not pass on your details to any third party without your prior consent. Only one (1) entry per entrant is permitted – multiple entries will be disqualified. Please see our <a href="http://www.noterik.nl/wp-content/uploads/2016/02/EUscreen_Video_Contest_Terms_and_Conditions.pdf" target="_blank">Terms and Conditions</a> for more information.
             </p>
         </div>
     </div>
