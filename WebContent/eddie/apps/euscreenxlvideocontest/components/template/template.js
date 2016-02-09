@@ -2,7 +2,6 @@ var Template = function () {
     Component.apply(this, arguments);
     
   //form validation
-    var check = true;
 
     // regex for email validation
     function validateEmail(email) {
@@ -17,27 +16,38 @@ var Template = function () {
     }
 
     $( "#submit-btn" ).click(function() {
-    	  
+    		var check = true;
+
 	        var valueName = jQuery("[name='name']").get(0).value;
 	        var valueEmail = jQuery("[name='email']").get(0).value;
 	        var valueUrl = jQuery("[name='Url']").get(0).value;
 	        var valueSumary = jQuery("[name='sumary']").get(0).value;
     	
-    		if (valueName == "" || valueName == undefined) {
-    			check = false;
-    			jQuery("[name='name']").css({"border": "1px solid red", "color": "red"});
+//    		if (valueName == "" || valueName == undefined) {
+//    			check = false;
+//    			jQuery("[name='name']").css({"border": "1px solid red", "color": "red"});
+//    		}
+//    	
+//    		if (validateEmail(valueEmail) == false ) {
+//    			check = false;
+//    			jQuery("[name='email']").css({"border": "1px solid red", "color": "red"});
+//    		}
+//    	
+//    		if (validateUrl(valueUrl) == false ) {
+//    			check = false;
+//    			jQuery("[name='Url']").css({"border": "1px solid red", "color": "red"});
+//    			
+//    		}
+    		
+    		
+    		
+    		if(check == true){
+    			var result = JSON.stringify({"name": valueName, "email": valueEmail, "url": valueUrl, "summary": valueSumary});
+
+    			eddie.putLou("", "sendContestEmail(" + result + ")");
     		}
-    	
-    		if (validateEmail(valueEmail) == false ) {
-    			check = false;
-    			jQuery("[name='email']").css({"border": "1px solid red", "color": "red"});
-    		}
-    	
-    		if (validateUrl(valueUrl) == false ) {
-    			check = false;
-    			jQuery("[name='Url']").css({"border": "1px solid red", "color": "red"});
-    			
-    		}
+    		
+    		
     	    console.log(valueName);
     	    console.log(valueEmail);
     	    console.log(valueUrl);

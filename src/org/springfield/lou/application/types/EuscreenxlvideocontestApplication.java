@@ -1,6 +1,13 @@
 package org.springfield.lou.application.types;
 
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.JSONParser;
 import org.springfield.lou.application.Html5Application;
+import org.springfield.lou.application.myeuscreen.mail.EuscreenContestEmail;
+import org.springfield.lou.application.myeuscreen.mail.Mailer;
 import org.springfield.lou.euscreen.config.Config;
 import org.springfield.lou.euscreen.config.ConfigEnvironment;
 import org.springfield.lou.euscreen.config.SettingNotExistException;
@@ -10,7 +17,8 @@ import org.springfield.lou.screen.Screen;
 public class EuscreenxlvideocontestApplication extends Html5Application{
 
 	private Config config;
-		
+	private Mailer mailer;
+	
  	public EuscreenxlvideocontestApplication(String id) {
 		super(id); 
 		System.out.println("WHooo i am awake");
@@ -37,10 +45,27 @@ public class EuscreenxlvideocontestApplication extends Html5Application{
 			}else{
 				config = new Config();
 			}
+			
 		}catch(SettingNotExistException snee){
 			snee.printStackTrace();
 		}
+		
+		try {
+			this.mailer = new Mailer();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
+ 	
+ 	public void actionSendcontestemail(Screen s, String ob) {
+ 		System.out.println("actionSendContestEmail(" + ob + ")");
+ 		JSONObject object = (JSONObject) JSONValue.parse(ob);
+		mailer.sendMessage(new EuscreenContestEmail(object.get("name").toString(), object.get("email").toString(), object.get("url").toString(), object.get("summary").toString()));
+
+        
+        
+ 	}
  	
  	private boolean inDevelMode() {
     	return LazyHomer.inDeveloperMode();
