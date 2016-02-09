@@ -2,17 +2,6 @@ var Template = function () {
     Component.apply(this, arguments);
     
   //form validation
-    var bla1 = $('#input-1').val();
-    var bla2 = $('#input-2').val();
-    var bla3 = $('#input-3').val();
-    var bla4 = $('#txt_name').val();
-    
-    var valueName = jQuery("[name='name']").get(0).value;
-     console.log(jQuery("[name='name']").get(0).value);
-    var valueEmail = jQuery("[name='email']").get(0).value;
-    var valueUrl = jQuery("[name='Url']").get(0).value;
-    var valueSumary = jQuery("[name='sumary']").get(0).value;
-
     var check = true;
 
     // regex for email validation
@@ -28,28 +17,34 @@ var Template = function () {
     }
 
     $( "#submit-btn" ).click(function() {
+    	  
+	        var valueName = jQuery("[name='name']").get(0).value;
+	        var valueEmail = jQuery("[name='email']").get(0).value;
+	        var valueUrl = jQuery("[name='Url']").get(0).value;
+	        var valueSumary = jQuery("[name='sumary']").get(0).value;
+    	
     		if (valueName == "" || valueName == undefined) {
     			check = false;
+    			jQuery("[name='name']").css({"border": "1px solid red", "color": "red"});
     		}
     	
     		if (validateEmail(valueEmail) == false ) {
     			check = false;
+    			jQuery("[name='email']").css({"border": "1px solid red", "color": "red"});
     		}
     	
     		if (validateUrl(valueUrl) == false ) {
     			check = false;
+    			jQuery("[name='Url']").css({"border": "1px solid red", "color": "red"});
+    			
     		}
     	    console.log(valueName);
     	    console.log(valueEmail);
     	    console.log(valueUrl);
     	    console.log(valueSumary);
     	    
-    	    console.log(bla1);
-    	    console.log(bla2);
-    	    console.log(bla3)
     	});
     // end of form validation
-    
 };
 
 Template.prototype = Object.create(Component.prototype);

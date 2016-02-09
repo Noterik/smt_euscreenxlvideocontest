@@ -67,6 +67,7 @@
 }
 .contest-page-share-ul li:last-child {
 	margin-right: 0px;
+	width: 15%;
 }
 .videocontest .fa-modified {
 	color: #FFF;
