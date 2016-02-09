@@ -1,8 +1,15 @@
 var Template = function () {
     Component.apply(this, arguments);
     
-  //form validation
+    this.container = $('.videocontest');
+    this.facebookButton = this.videocontest.find('#button-facebook');
+    this.twitterButton = this.videocontest.find('#button-twitter');
+    this.googleButton = this.videocontest.find('#button-google');
 
+    //bind share functionalities
+    this.facebookButton
+    
+    
     // regex for email validation
     function validateEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -63,12 +70,6 @@ var Template = function () {
     			eddie.putLou("", "sendContestEmail(" + result + ")");
     			
     		}
-
-    		
-    	    console.log(valueName);
-    	    console.log(valueEmail);
-    	    console.log(valueUrl);
-    	    console.log(valueSumary);
     	    
     	});
     // end of form validation
