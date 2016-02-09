@@ -61,7 +61,6 @@
 }
 .contest-page-share-ul li:last-child {
 	margin-right: 0px;
-	width: 15%;
 }
 .videocontest .fa-modified {
 	color: #FFF;
@@ -73,7 +72,7 @@
 	padding: 12px;
 }
 .videocontest .contest-page-share {
-	height: 52px;
+	height: 66px;
 	padding: 5px 0px;
 }
 .videocontest .main {
@@ -553,4 +552,24 @@
 	text-align: center;
 	color: green;
 	width: 100%;
+}
+.styled-spn {
+	float: left;
+    border: 2px solid #d0d0d0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 9px 14px;
+    background-color: #f1f1f1;
+}
+.styled-inpt {
+	float: left;
+    display: block;
+    border-top: 2px solid #d0d0d0;
+    border-right: 2px solid #d0d0d0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #f1f1f1;
+    border-left: none;
+    border-bottom: 2px solid #d0d0d0;
+    padding: 9px;
 }
