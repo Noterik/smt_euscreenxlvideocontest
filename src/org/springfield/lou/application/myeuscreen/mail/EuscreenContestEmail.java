@@ -5,7 +5,7 @@ public class EuscreenContestEmail extends AbstractMessage {
 		super();
 		this.setRecipient("contest@euscreen.eu");
 		this.setCCRecipient("r.rozendal@noterik.nl");
-		this.setSubject("EUScreen contest");
+		this.setSubject("EUscreen contest submission");
 		this.setSender(sender);
 		StringBuilder stringbuilder = new StringBuilder();
 		stringbuilder.append("<p>User names: " + names + ",</p>");

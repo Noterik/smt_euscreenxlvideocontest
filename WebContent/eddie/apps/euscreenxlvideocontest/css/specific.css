@@ -44,12 +44,6 @@
 	border: medium none;
 	padding: 20px;
 }
-.videocontest .share-copy-box {
-	width: 211px;
-	height: 29px;
-	margin-top: 4px;
-	background: transparent url("/eddie/apps/euscreenxlelements/img/content/videocontest/share.png");
-}
 .row-with-bg {
 	padding: 0px;
 	background-color: #FFF;
@@ -548,4 +542,15 @@
 }
 .videocontest .main .videocontest-section .right a:hover .hue {
   background: rgba(220, 109, 147, 0.5);
+}
+.new-color::-webkit-input-placeholder {
+    color: #F64747;
+}
+
+.grn-submit  {
+	display: none;
+	margin-top: 20px;
+	text-align: center;
+	color: green;
+	width: 100%;
 }

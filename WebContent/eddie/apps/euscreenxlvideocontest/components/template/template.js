@@ -23,30 +23,47 @@ var Template = function () {
 	        var valueUrl = jQuery("[name='Url']").get(0).value;
 	        var valueSumary = jQuery("[name='sumary']").get(0).value;
     	
-//    		if (valueName == "" || valueName == undefined) {
-//    			check = false;
-//    			jQuery("[name='name']").css({"border": "1px solid red", "color": "red"});
-//    		}
-//    	
-//    		if (validateEmail(valueEmail) == false ) {
-//    			check = false;
-//    			jQuery("[name='email']").css({"border": "1px solid red", "color": "red"});
-//    		}
-//    	
-//    		if (validateUrl(valueUrl) == false ) {
-//    			check = false;
-//    			jQuery("[name='Url']").css({"border": "1px solid red", "color": "red"});
-//    			
-//    		}
+    		if (valueName == "" || valueName == undefined) {
+    			check = false;
+    			jQuery("[name='name']").css({"border": "2px solid #F64747",});
+    			jQuery("[name='name']").attr("placeholder", "Please put your Name and Surname !");
+    			jQuery("[name='name']").addClass('new-color');
+    		}
+    	
+    		if (validateEmail(valueEmail) == false ) {
+    			check = false;
+    			jQuery("[name='email']").css({"border": "2px solid #F64747",});
+    			jQuery("[name='email']").attr("placeholder", "Please put your email address !");
+    			jQuery("[name='email']").addClass('new-color');
+    		}
+    	
+    		if (validateUrl(valueUrl) == false ) {
+    			check = false;
+    			jQuery("[name='Url']").css({"border": "2px solid #F64747",});
+    			jQuery("[name='Url']").attr("placeholder", "Please put the url of your favourite video !");
+    			jQuery("[name='Url']").addClass('new-color');
+    		}
     		
+    		if (valueSumary == "" || valueSumary == undefined) {
+    			check = false;
+    			jQuery("[name='sumary']").css({"border": "2px solid #F64747",});
+    			jQuery("[name='sumary']").attr("placeholder", "Please tell us why do you like this video !");
+    			jQuery("[name='sumary']").addClass('new-color');
+    		}
     		
-    		
+
     		if(check == true){
+    			jQuery(".grn-submit").css({"display": "block"});
+    			jQuery("[name='name']").css({"border": "2px solid rgb(197, 197, 197)"});
+    			jQuery("[name='email']").css({"border": "2px solid rgb(197, 197, 197)"});
+    			jQuery("[name='Url']").css({"border": "2px solid rgb(197, 197, 197)	"});
+    			jQuery("[name='sumary']").css({"border": "2px solid rgb(197, 197, 197)"});
     			var result = JSON.stringify({"name": valueName, "email": valueEmail, "url": valueUrl, "summary": valueSumary});
 
     			eddie.putLou("", "sendContestEmail(" + result + ")");
+    			
     		}
-    		
+
     		
     	    console.log(valueName);
     	    console.log(valueEmail);
