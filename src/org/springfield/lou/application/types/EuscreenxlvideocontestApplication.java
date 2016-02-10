@@ -1,10 +1,15 @@
 package org.springfield.lou.application.types;
 
 import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import org.json.simple.parser.JSONParser;
+import org.springfield.fs.FSList;
+import org.springfield.fs.FSListManager;
+import org.springfield.fs.FsNode;
 import org.springfield.lou.application.Html5Application;
 import org.springfield.lou.application.myeuscreen.mail.EuscreenContestEmail;
 import org.springfield.lou.application.myeuscreen.mail.Mailer;
@@ -92,5 +97,16 @@ public class EuscreenxlvideocontestApplication extends Html5Application{
  	public String getFavicon() {
         return "/eddie/apps/euscreenxlelements/img/favicon.png";
     }
+ 	
+ 	
+ 	public String getMetaHeaders(HttpServletRequest request) {
+ 		String metaString = "<meta property=\"og:title\" content=\"EUScreen video contest\"/>";
+		metaString += "<meta property=\"og:site_name\" content=\"EUscreenXL\" />";
+		metaString += "<meta property=\"og:type\" content=\"website\" />";
+		metaString += "<meta property=\"og:url\" content=\"http://pb.euscreenxl.eu/contest.html\" />";
+		metaString += "<meta property=\"og:description\" content=\"Some description about euscreen contest\" />";
+		metaString += "<meta property=\"og:image\" content=\"http://www.digitalmeetsculture.net/wp-content/uploads/2015/11/euscreen.jpg\" />";
+		return metaString;
+	}
 
 }

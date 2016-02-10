@@ -1,14 +1,20 @@
 var Template = function () {
     Component.apply(this, arguments);
-    
+	
     this.container = $('.videocontest');
-    this.facebookButton = this.videocontest.find('#button-facebook');
-    this.twitterButton = this.videocontest.find('#button-twitter');
-    this.googleButton = this.videocontest.find('#button-google');
+  	
+    this.$facebookButton = this.container.find('#button-facebook');
+    this.$twitterButton = this.container.find('#button-twitter');
+    this.$googleButton = this.container.find('#button-google');
+    this.$urlInput = this.container.find("#url-input");
+//    this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "Test" });
+//    this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "Test" });
+//    this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : "Test" });
 
-    //bind share functionalities
-    this.facebookButton
-    
+    this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "Test" });
+    this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "Test" });
+    this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : "Test" });
+    this.$urlInput.val(document.location);
     
     // regex for email validation
     function validateEmail(email) {
