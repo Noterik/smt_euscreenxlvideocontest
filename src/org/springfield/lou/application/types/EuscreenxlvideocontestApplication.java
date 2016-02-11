@@ -100,12 +100,12 @@ public class EuscreenxlvideocontestApplication extends Html5Application{
  	
  	
  	public String getMetaHeaders(HttpServletRequest request) {
- 		String metaString = "<meta property=\"og:title\" content=\"EUScreen video contest\"/>";
+ 		String metaString = "<meta property=\"og:title\" content=\"Video Competition | My favorite EUscreen video\"/>";
 		metaString += "<meta property=\"og:site_name\" content=\"EUscreenXL\" />";
 		metaString += "<meta property=\"og:type\" content=\"website\" />";
 		metaString += "<meta property=\"og:url\" content=\"http://pb.euscreenxl.eu/contest.html\" />";
-		metaString += "<meta property=\"og:description\" content=\"Some description about euscreen contest\" />";
-		metaString += "<meta property=\"og:image\" content=\"http://www.digitalmeetsculture.net/wp-content/uploads/2015/11/euscreen.jpg\" />";
+		metaString += "<meta property=\"og:description\" content=\"EUscreen has more than 60 000 videos available online. Let us know which one's your favourite! The 12 best suggestions will form our next Video Collection & each win a 30 EUR Amazon gift-card. Good luck!\" />";
+		metaString += "<meta property=\"og:image\" content=\"http://pb.euscreenxl.eu/eddie/apps/euscreenxlelements/img/content/contestpage/contest%20facebook.jpg\" />";
 		return metaString;
 	}
 
