@@ -7,9 +7,6 @@ var Template = function () {
     this.$twitterButton = this.container.find('#button-twitter');
     this.$googleButton = this.container.find('#button-google');
     this.$urlInput = this.container.find("#url-input");
-//    this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "Test" });
-//    this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "Test" });
-//    this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : "Test" });
 
     this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "Test" });
     this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "Test" });
