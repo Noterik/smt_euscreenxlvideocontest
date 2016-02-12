@@ -8,9 +8,9 @@ var Template = function () {
     this.$googleButton = this.container.find('#button-google');
     this.$urlInput = this.container.find("#url-input");
 
-    this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "Test" });
-    this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "Test" });
-    this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : "Test" });
+    this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : "" });
+    this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : "" });
+    this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : "" });
     this.$urlInput.val(document.location);
     
     // regex for email validation

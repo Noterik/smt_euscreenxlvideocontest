@@ -31,7 +31,8 @@
 		        hashtag = encodeURIComponent('My favourite #EUscreen video | Join the #competition & #win a 30€ Amazon giftcard! www.euscreen.eu/contest'),
 		        left   = ($(window).width()  - width)  / 2,
 		        top    = ($(window).height() - height) / 2,
-		        url    = 'http://twitter.com/share?text='+text+'&url='+uri,
+//		        url    = 'http://twitter.com/share?text='+text+'&url='+uri,
+		        url ='https://twitter.com/share';
 		        opts   = 'status=1' +
 		                 ',width='  + width  +
 		                 ',height=' + height +
