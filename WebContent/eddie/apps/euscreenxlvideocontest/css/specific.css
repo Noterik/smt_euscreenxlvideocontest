@@ -573,3 +573,20 @@
     border-bottom: 2px solid #d0d0d0;
     padding: 9px;
 }
+@media (max-width: 991px){
+    .welcome-text-modified {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 460px){
+    .contest-page-share-ul {
+		display: inline;
+	}
+	.contest-page-share-ul li {
+		float: left;
+	}
+	.share-input-box {
+	    margin-top: 20px;
+	}
+}
