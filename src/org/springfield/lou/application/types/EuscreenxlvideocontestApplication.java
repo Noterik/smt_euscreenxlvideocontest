@@ -105,14 +105,14 @@ public class EuscreenxlvideocontestApplication extends Html5Application{
 		metaString += "<meta property=\"og:type\" content=\"website\" />";
 		metaString += "<meta property=\"og:url\" content=\"http://euscreen.eu/contest.html\" />";
 		metaString += "<meta property=\"og:description\" content=\"EUscreen has more than 60 000 videos available online. Let us know which one's your favourite! The 12 best suggestions will form our next Video Collection & each win a 30 EUR Amazon gift-card. Good luck!\" />";
-		metaString += "<meta property=\"og:image\" content=\"http://pb.euscreenxl.eu/eddie/apps/euscreenxlelements/img/content/contestpage/contest%20facebook.jpg\" />";
+		metaString += "<meta property=\"og:image\" content=\"http://euscreen.eu/eddie/apps/euscreenxlelements/img/content/contestpage/contest%20facebook.jpg\" />";
 
 		metaString += "<meta name=\"twitter:card\" content=\"summary_large_image\">";
 		metaString += "<meta name=\"twitter:site\" content=\"@EUscreenXL\">";
 		metaString += "<meta name=\"twitter:creator\" content=\"@Euscreen\">";
 		metaString += "<meta name=\"twitter:title\" content=\"Video Competition | My favorite EUscreen video\">";
 		metaString += "<meta name=\"twitter:description\" content=\"EUscreen has more than 60 000 videos available online. Let us know which one's your favourite! The 12 best suggestions will form our next Video Collection & each win a 30 EUR Amazon gift-card. Good luck!\">";
-		metaString += "<meta name=\"twitter:image\" content=\"http://pb.euscreenxl.eu/eddie/apps/euscreenxlelements/img/content/contestpage/contest%20facebook.jpg\">";
+		metaString += "<meta name=\"twitter:image\" content=\"http://euscreen.eu/eddie/apps/euscreenxlelements/img/content/contestpage/contest%20facebook.jpg\">";
 		return metaString;
 	}
 
