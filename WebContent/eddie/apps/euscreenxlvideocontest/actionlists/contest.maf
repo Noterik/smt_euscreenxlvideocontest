@@ -1,5 +1,7 @@
 setUrlTrigger(/lou/euscreen/contest.html,/lou/domain/webtv/html5application/euscreenxlvideocontest)
+setUrlTrigger(/lou/euscreen/contest,/lou/domain/webtv/html5application/euscreenxlvideocontest)
 setUrlTrigger(www.euscreen.eu@/lou/euscreen/contest.html,/lou/domain/webtv/html5application/euscreenxlvideocontest)
+setUrlTrigger(www.euscreen.eu@/lou/euscreen/contest,/lou/domain/webtv/html5application/euscreenxlvideocontest)
 setUrlTrigger(www.euscreenxl.eu@/lou/euscreen/contest.html,/lou/domain/webtv/html5application/euscreenxlvideocontest)
 setUrlTrigger(beta.euscreenxl.eu@/lou/euscreen/contest.html,/lou/domain/webtv/html5application/euscreenxlvideocontest)
 setUrlTrigger(beta.euscreen.eu@/lou/euscreen/contest.html,/lou/domain/webtv/html5application/euscreenxlvideocontest)
